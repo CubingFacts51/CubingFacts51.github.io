@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubing Facts 51</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Cubing Facts 51</a>
+        <ul class="nav-links">
+            <li><a href="#facts">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="facts" class="section-container">
+        <h1>Enter a number to learn a cubing fact!</h1>
+        <div class="input-group">
+            <input type="number" id="INT" min="1" max="51" placeholder="Enter a number (1 ~ 51)">
+            <button onclick="lookupValue()">View Fact</button>
+        </div>
+        <p id="display_area"></p>
+    </div>
+
+    <div id="articles" class="section-container">
+        <h1>Cubing Library</h1>
+        <p>Select a document below to view it.</p>
+        
+        <div class="pdf-controls">
+            <button class="pdf-btn" onclick="showPdf('CubingFacts.pdf')">View Basic Cubing Facts</button>
+            <button class="pdf-btn" onclick="showPdf('TheMechanicsAndTheSolution.pdf')">View Mechanics & Solution</button>
+        </div>
+
+        <iframe id="pdfFrame" src="CubingFacts.pdf" allowfullscreen>
+            <p>Your browser does not support PDFs. 
+                <a href="CubingFacts.pdf">Download the PDF</a>.
+            </p>
+        </iframe>
+    </div>
+
+    <hr>
+
+    <div id="about" class="section-container">
+        <h1>About This Website</h1>
+        <div class="about-content">
+            <p>This website is dedicated to sharing interesting facts about the Rubik's Cube and speedcubing. 
+            Whether you're a beginner or an experienced cuber, there's always something new to learn!</p>
+            <p>I picked out some of the most interesting facts of cubing and hope you enjoy this little website I made.</p>
+            <p>If you want me to add something new or change something, feel free to let me know!</p>
+            <p><strong>Email:</strong> <a href="mailto:jscuber51@gmail.com">jscuber51@gmail.com</a></p>
+        </div>
+</body>
+</html>
